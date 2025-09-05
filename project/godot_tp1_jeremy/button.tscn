@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://cmsuxla1m4ctp"]
 
 [ext_resource type="Script" uid="uid://s26p4wj8b8q8" path="res://button.gd" id="1_n4tde"]
-[ext_resource type="AudioStream" uid="uid://b35tgy2j7enwt" path="res://AudioLoop.tres" id="2_n4tde"]
+[ext_resource type="AudioStream" uid="uid://dy4swexmsooof" path="res://clochette copie.wav" id="1_r04n3"]
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -11,13 +11,6 @@ offset_right = 38.0
 offset_bottom = 40.0
 scale = Vector2(5.74413, 3.20204)
 script = ExtResource("1_n4tde")
-
-[node name="CheckButton" type="CheckButton" parent="."]
-layout_mode = 0
-offset_left = 14.135
-offset_right = 58.135
-offset_bottom = 24.0
-scale = Vector2(0.592644, 0.935274)
 
 [node name="Button" type="Button" parent="."]
 layout_mode = 0
@@ -32,8 +25,7 @@ button_pressed = true
 [node name="MusicPlayer" type="AudioStreamPlayer2D" parent="."]
 position = Vector2(3.095, 1.59)
 scale = Vector2(1.17532, 2.5289)
-stream = ExtResource("2_n4tde")
+stream = ExtResource("1_r04n3")
 volume_db = 8.357
 
-[connection signal="toggled" from="CheckButton" to="." method="_on_check_button_toggled"]
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
