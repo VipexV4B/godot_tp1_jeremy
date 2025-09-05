@@ -5,8 +5,6 @@ var JUMP_FORCE = -2000.0;
 const GRAVITY = 25.0;
 
 func _physics_process(delta: float) -> void:
-	
-	
 	var direction = Input.get_axis("move_left", "move_right")
 	velocity.x = direction * speed
 	

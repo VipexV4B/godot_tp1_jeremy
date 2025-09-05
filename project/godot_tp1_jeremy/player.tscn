@@ -1,10 +1,11 @@
-[gd_scene load_steps=4 format=3 uid="uid://cmyjruaqywtsx"]
+[gd_scene load_steps=5 format=3 uid="uid://cmyjruaqywtsx"]
 
 [ext_resource type="Texture2D" uid="uid://blh0i6ok2atit" path="res://personnage.png" id="1_4flbx"]
 [ext_resource type="Script" uid="uid://k0cii0fusicr" path="res://player.gd" id="1_onrkg"]
+[ext_resource type="Script" uid="uid://c6feo5h7vcsnb" path="res://camera_2d.gd" id="3_i3pqv"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_onrkg"]
-size = Vector2(8.34812, 13.8638)
+size = Vector2(8.34812, 14.0129)
 
 [node name="CharacterBody2D" type="CharacterBody2D"]
 scale = Vector2(2.59, 2.59)
@@ -12,10 +13,13 @@ slide_on_ceiling = false
 script = ExtResource("1_onrkg")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, 2.89575)
+position = Vector2(0, 2.7027)
 scale = Vector2(2.59, 2.59)
 shape = SubResource("RectangleShape2D_onrkg")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 scale = Vector2(2.59, 2.59)
 texture = ExtResource("1_4flbx")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+script = ExtResource("3_i3pqv")
