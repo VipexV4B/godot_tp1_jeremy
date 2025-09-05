@@ -1,18 +1,108 @@
-[gd_scene load_steps=2 format=3 uid="uid://b5alnst2dv3ri"]
+[gd_scene load_steps=4 format=3 uid="uid://b5alnst2dv3ri"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_e6lj2"]
 size = Vector2(1149.5, 135.421)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_c7s6e"]
+size = Vector2(40.6896, 40)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wijl4"]
+size = Vector2(20, 509)
 
 [node name="StaticBody2D" type="StaticBody2D"]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(575.25, 577.516)
+[node name="floor" type="CollisionShape2D" parent="."]
+position = Vector2(575.25, 574.516)
 scale = Vector2(1, -1.11528)
 shape = SubResource("RectangleShape2D_e6lj2")
 
-[node name="ColorRect" type="ColorRect" parent="."]
+[node name="floorColor" type="ColorRect" parent="."]
 offset_top = 500.0
 offset_right = 1150.0
 offset_bottom = 649.24
+
+[node name="carréColor" type="ColorRect" parent="."]
+offset_left = 154.0
+offset_top = 460.0
+offset_right = 194.0
+offset_bottom = 500.0
+color = Color(1, 0.467547, 0.0884589, 1)
+
+[node name="carré" type="CollisionShape2D" parent="."]
+position = Vector2(174, 480)
+shape = SubResource("RectangleShape2D_c7s6e")
+
+[node name="carréColor2" type="ColorRect" parent="."]
+offset_left = 307.0
+offset_top = 365.0
+offset_right = 347.0
+offset_bottom = 405.0
+scale = Vector2(1, 0.71)
+color = Color(1, 0.467547, 0.0884589, 1)
+
+[node name="carré2" type="CollisionShape2D" parent="."]
+position = Vector2(327, 379)
+scale = Vector2(1, 0.71)
+shape = SubResource("RectangleShape2D_c7s6e")
+
+[node name="carréColor3" type="ColorRect" parent="."]
+offset_left = 467.0
+offset_top = 255.0
+offset_right = 507.0
+offset_bottom = 295.0
+scale = Vector2(0.845, 0.625)
+color = Color(1, 0.467547, 0.0884589, 1)
+
+[node name="carré3" type="CollisionShape2D" parent="."]
+position = Vector2(484, 267)
+scale = Vector2(0.845, 0.625)
+shape = SubResource("RectangleShape2D_c7s6e")
+
+[node name="carréColor4" type="ColorRect" parent="."]
+offset_left = 618.0
+offset_top = 251.0
+offset_right = 658.0
+offset_bottom = 291.0
+scale = Vector2(0.845, 0.625)
+color = Color(1, 0.467547, 0.0884589, 1)
+
+[node name="carré4" type="CollisionShape2D" parent="."]
+position = Vector2(635, 263)
+scale = Vector2(0.845, 0.625)
+shape = SubResource("RectangleShape2D_c7s6e")
+
+[node name="carréColor5" type="ColorRect" parent="."]
+offset_left = 771.0
+offset_top = 248.0
+offset_right = 811.0
+offset_bottom = 288.0
+scale = Vector2(0.845, 0.625)
+color = Color(1, 0.467547, 0.0884589, 1)
+
+[node name="carré5" type="CollisionShape2D" parent="."]
+position = Vector2(788, 260)
+scale = Vector2(0.845, 0.625)
+shape = SubResource("RectangleShape2D_c7s6e")
+
+[node name="carréColor6" type="ColorRect" parent="."]
+offset_left = 953.0
+offset_top = 246.0
+offset_right = 993.0
+offset_bottom = 286.0
+scale = Vector2(3.34, 0.625)
+color = Color(1, 0.467547, 0.0884589, 1)
+
+[node name="carré6" type="CollisionShape2D" parent="."]
+position = Vector2(1020, 258)
+scale = Vector2(3.34, 0.625)
+shape = SubResource("RectangleShape2D_c7s6e")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
+position = Vector2(-11, 248)
+shape = SubResource("RectangleShape2D_wijl4")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(1162, 250)
+shape = SubResource("RectangleShape2D_wijl4")
