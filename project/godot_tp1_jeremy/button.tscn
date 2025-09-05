@@ -22,10 +22,15 @@ scale = Vector2(1.17532, 2.5289)
 toggle_mode = true
 button_pressed = true
 
-[node name="MusicPlayer" type="AudioStreamPlayer2D" parent="."]
-position = Vector2(3.095, 1.59)
-scale = Vector2(1.17532, 2.5289)
+[node name="CheckButton" type="CheckButton" parent="."]
+layout_mode = 0
+offset_left = 19.3241
+offset_top = 1.2492
+offset_right = 63.3241
+offset_bottom = 25.2492
+
+[node name="MusicPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("1_r04n3")
-volume_db = 8.357
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="toggled" from="CheckButton" to="." method="_on_check_button_toggled"]
